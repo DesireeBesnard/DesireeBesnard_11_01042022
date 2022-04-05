@@ -5,6 +5,7 @@ import './style/index.css';
 import Home from './pages/Home';
 import About from './pages/About'
 import DesignSys from './pages/DesignSystem'
+import Page404 from './components/404'
 import Header from './components/Header'
 import reportWebVitals from './reportWebVitals';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/designsys" element={<DesignSys />} />
+        <Route path='*' element={<Page404 />}/>
       </Routes>
       
     </Router>

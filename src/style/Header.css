@@ -10,3 +10,7 @@
     font-size: 24px;
     color: var(--main-color);
 }
+
+.link-active {
+    text-decoration: underline;
+}
