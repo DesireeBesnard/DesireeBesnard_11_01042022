@@ -1,10 +1,12 @@
-// import '../../style/About.css'
-import Header from '../../components/Header'
+import Thumb from '../../components/Thumb'
+import Gallery from '../../components/Gallery'
+
 
 function DesignSys() {
     return (
         <div>
-            {/* <Header /> */}
+            <Thumb />
+            <Gallery />
         </div>
     )
 }

@@ -1,6 +1,5 @@
 .home-banner {
   background-image: url('/public/assets/homeBanner.png');
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
