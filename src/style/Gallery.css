@@ -1,3 +1,9 @@
 .gallery {
     background-color: #F7F7F7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    justify-content: center;
+    grid-gap: 55px;
 }

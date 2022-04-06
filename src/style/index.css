@@ -18,6 +18,8 @@ a {
 }
 
 .container {
+  max-width: 1240px;
+  margin: auto;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -36,6 +38,7 @@ a {
   border-radius: 25px;
   position: relative;
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 .banner h1 {

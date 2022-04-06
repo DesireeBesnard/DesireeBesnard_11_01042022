@@ -9,9 +9,7 @@ function Home() {
         <div className="banner-overlay"></div>
         <h1>Chez vous, partout et ailleurs</h1>
       </section>
-      <section>
-        <Gallery />
-      </section>
+      <Gallery />
     </main>
   )
 }
