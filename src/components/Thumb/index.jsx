@@ -10,7 +10,6 @@ function Thumb(props) {
           <div className="thumb-overlay"></div>
           <p>{props.title}</p>
       </div>
-    
     </Link>
   )
 }

@@ -1,0 +1,13 @@
+footer {
+    height: 209px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+footer div {
+    max-width: 1440px;
+}

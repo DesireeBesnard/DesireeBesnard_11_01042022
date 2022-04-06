@@ -7,6 +7,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.designGrid {
+  display: grid;
+  grid-gap: 30px;
+}
+
 nav {
   display: flex;
   align-items: center;

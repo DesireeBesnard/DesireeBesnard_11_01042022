@@ -7,6 +7,7 @@ import About from './pages/About'
 import DesignSys from './pages/DesignSystem'
 import Page404 from './components/404'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import reportWebVitals from './reportWebVitals'
 
 const container = document.getElementById('root')
@@ -23,6 +24,7 @@ root.render(
         <Route path="/designsys" element={<DesignSys />} />
         <Route path='*' element={<Page404 />}/>
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 )
