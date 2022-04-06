@@ -1,12 +1,17 @@
+import {Link} from 'react-router-dom'
 import '../../style/index.css';
 import '../../style/Thumb.css';
 
-function Thumb() {
+function Thumb(props) {
   return (
-    <div className='thumb'>
-        <div className="thumb-overlay"></div>
-        <p>Titre de la location</p>
-    </div>
+    <Link to ='/housing' >
+      <div className='thumb' 
+        style={{backgroundImage: `url(${props.cover})`}}>
+          <div className="thumb-overlay"></div>
+          <p>{props.title}</p>
+      </div>
+    
+    </Link>
   )
 }
 

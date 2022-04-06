@@ -1,12 +1,13 @@
 import Thumb from '../../components/Thumb'
-import Gallery from '../../components/Gallery'
 
 
 function DesignSys() {
     return (
         <div>
-            <Thumb />
-            <Gallery />
+            <Thumb 
+                cover = 'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg' 
+                title = 'Je suis un titre'
+            />
         </div>
     )
 }
