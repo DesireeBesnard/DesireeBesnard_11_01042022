@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import {Link} from 'react-router-dom'
 import Thumb from '../Thumb'
 import '../../style/index.css';
 import '../../style/Gallery.css';
@@ -19,7 +20,7 @@ function Gallery() {
         return response.json()
       })
       .then(function(myJson) {
-        console.log(myJson)
+        // console.log(myJson)
         setData(myJson)
       })
   }
@@ -32,11 +33,12 @@ function Gallery() {
     <section className='gallery'>
       {
         data && data.length > 0 && data.map((housing) => (
-          <Thumb
-            key = {housing.id}
-            cover = {housing.cover}
-            title = {housing.title}
-          />
+          <Link to = {`/housing/${housing.id}`} key = {housing.id} >
+            <Thumb
+              cover = {housing.cover}
+              title = {housing.title}
+            />
+          </Link>
         ))
       }
     </section>

@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './style/index.css';
 import Home from './pages/Home';
 import About from './pages/About'
-import DesignSys from './pages/DesignSystem'
+import DesignSys from './components/DesignSystem'
 import Page404 from './components/404'
 import Header from './components/Header'
+import Housing from './components/Housing'
 import Footer from './components/Footer'
 import reportWebVitals from './reportWebVitals'
 
@@ -18,11 +19,11 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/housing" element={<Home />} />
+        <Route exact path="/" element={<Home />}/>
+        <Route path="/housing/:housingId" element={<Housing />}/>
         <Route path="/about" element={<About />} />
-        <Route path="/designsys" element={<DesignSys />} />
         <Route path='*' element={<Page404 />}/>
+        <Route path="/designsys" element={<DesignSys />} />
       </Routes>
       <Footer />
     </Router>

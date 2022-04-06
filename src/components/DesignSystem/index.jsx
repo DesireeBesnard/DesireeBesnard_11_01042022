@@ -1,5 +1,4 @@
-import Thumb from '../../components/Thumb'
-import Footer from '../../components/Footer'
+import Thumb from '../Thumb'
 
 
 function DesignSys() {
