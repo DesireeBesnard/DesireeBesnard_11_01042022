@@ -25,7 +25,6 @@ function Housing() {
         .then(function(myJson) {
           let id = params.housingId
           let house = myJson.find(housing => housing.id === id )
-          console.log(house)
           setData(house)
         })
     }
@@ -34,7 +33,8 @@ function Housing() {
 
 
   return (
-    <main >
+    <main className='container'>
+      {/* {console.log(data.pictures)} */}
         <Carrousel pictures ={data.pictures} />
     </main>
   )
