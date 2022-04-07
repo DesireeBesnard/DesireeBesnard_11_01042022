@@ -4,7 +4,7 @@ import '../../style/Header.css'
 
 function Header() {
     return (
-        <header className='container'>
+        <header className='container header'>
             <Link to ='/' ><img src={process.env.PUBLIC_URL + '/assets/logoHeader.png'} alt='logo Kasa' className='logo' /></Link>
             <nav>
                 <NavLink to='/' className={({ isActive }) => isActive ? "link-active" : "link"}>Accueil</NavLink>

@@ -1,7 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import { useParams } from "react-router-dom"
 import Carrousel from '../Carrousel'
+import Tag from '../Tag'
 import '../../style/index.css';
+import '../../style/Housing.css'
 
 function Housing() {
 
@@ -31,13 +33,39 @@ function Housing() {
     getData()
   }, [params.housingId])
 
+  if (data.length !== 0) {
+    return (
+      <main className='container'>
+          <Carrousel pictures ={data.pictures} />
+          <section className='housingInfos'>
+            <header className='housingHeader'>
+              <div>
+                <h1>{data['title']}</h1>
+                <p>{data['location']}</p>
+                <div className='tags'>
+                  {data.tags.map((tag, index) => (
+                    <Tag tagName= {tag} key= {index}></Tag>
+                  ))}
+                </div>
+              </div>
+  
+              <div>
+                <div className='host'>
+                  <p>{data.host['name']}</p>
+                  <img src={data.host['picture']} alt="host portrait" />
+                </div>
+                <div>
+                  <p>ratings: {data['rating']}</p>
+                </div>
+              </div>
+            </header>
+  
+            <div></div>
+          </section>
+      </main>
+    )
+  }
 
-  return (
-    <main className='container'>
-      {/* {console.log(data.pictures)} */}
-        <Carrousel pictures ={data.pictures} />
-    </main>
-  )
 }
 
 export default Housing;

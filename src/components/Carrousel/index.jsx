@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react'
+import {useState} from 'react'
 import '../../style/index.css'
 import '../../style/Carrousel.css'
 
@@ -27,7 +27,6 @@ function Carrousel(props) {
 
     if (props.pictures) {
         images = props.pictures
-        console.log(images)
 
         return (
             <section className='carrousel'>
