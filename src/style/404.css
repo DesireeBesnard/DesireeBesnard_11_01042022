@@ -1,0 +1,23 @@
+.errorContainer {
+    color: var(--main-color);
+    margin: auto;
+    text-align: center;
+}
+
+.errorContainer h1 {
+    margin: 30px auto 20px auto;
+    font-size: 288px;
+}
+
+.errorContainer p {
+    font-size: 36px;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.errorContainer a {
+    display: inline-block;
+    margin-bottom: 80px;
+    text-decoration: underline;
+}
