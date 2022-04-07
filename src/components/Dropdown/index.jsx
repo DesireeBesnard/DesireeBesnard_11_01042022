@@ -3,9 +3,6 @@ import '../../style/Dropdown.css'
 
 function Dropdown(props) {
 
-    const dropdownIcon = document.querySelector('.toggleDropdown')
-    const content = document.querySelector('.dropdownContent')
-
     const handleToggle = (e) => {
 
         e.target.classList.toggle('open')

@@ -1,8 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import { useParams } from "react-router-dom"
 import Carrousel from '../Carrousel'
-import Tag from '../Tag'
 import Dropdown from '../Dropdown'
+import Tag from '../Tag'
+ 
 import '../../style/index.css';
 import '../../style/Housing.css'
 
@@ -25,7 +26,7 @@ function Housing() {
         .then(function(response){
           return response.json()
         })
-        .then(function(myJson) {
+        .then(function(myJson) {  
           let id = params.housingId
           let house = myJson.find(housing => housing.id === id )
           setData(house)

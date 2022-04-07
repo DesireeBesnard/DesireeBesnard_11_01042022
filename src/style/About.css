@@ -1,0 +1,19 @@
+.about-banner {
+    background-image: url('/public/assets/aboutBanner.png');
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto auto 50px auto;
+}
+
+.values .dropdown {
+    width: 80%;
+}
+
+.values .dropdown:not(.values .dropdown:last-child) {
+    margin-bottom: 30px;
+}
