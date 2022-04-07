@@ -2,16 +2,44 @@
     height: 415px;
     background-color: blue;
     border-radius: 25px;
+    position: relative;
 }
 
 .slide {
     width: 100%;
     height: 100%;
+    position: absolute;
+    opacity: 0;
 }
 
-.slide img {
+.active-slide {
+    opacity: 1;
+}
+
+.slide > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.slideNumber {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+}
+
+.previous, .next {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+.next {
+    right: 0;
 }
