@@ -1,0 +1,38 @@
+.dropdown {
+    width: 582px;
+    height: fit-content;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+.dropdown h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.dropdownIcon {
+    transform: rotate(180deg) translateY(50%);
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding-left: 20px;
+}
+
+.dropdownContent {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    background-color: var(--secundary-color);
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+
+.dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

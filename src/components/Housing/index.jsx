@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { useParams } from "react-router-dom"
 import Carrousel from '../Carrousel'
 import Tag from '../Tag'
+import Dropdown from '../Dropdown'
 import '../../style/index.css';
 import '../../style/Housing.css'
 
@@ -60,7 +61,20 @@ function Housing() {
               </div>
             </header>
   
-            <div></div>
+            <div className='descriptions'>
+              <Dropdown title ="Description" content={
+                <p>{data.description}</p>
+              } />
+              <Dropdown 
+                title="Équipements" 
+                content={
+                  <ul>
+                      {data.equipments.map((equipement, index) => (
+                        <li key={index}>{equipement}</li>
+                      ))}
+                  </ul>
+              } />
+            </div>
           </section>
       </main>
     )
