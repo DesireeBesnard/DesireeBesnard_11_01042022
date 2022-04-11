@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import Carrousel from '../Carrousel'
 import Dropdown from '../Dropdown'
 import Tag from '../Tag'
+import Rate from '../Rate'
  
 import '../../style/index.css';
 import '../../style/Housing.css'
@@ -56,9 +57,10 @@ function Housing() {
                   <p>{data.host['name']}</p>
                   <img src={data.host['picture']} alt="host portrait" />
                 </div>
-                <div>
+                {/* <div>
                   <p>ratings: {data['rating']}</p>
-                </div>
+                </div> */}
+                <Rate numerator = {data['rating']} denominator = {5} name = {data['id']}/>
               </div>
             </header>
   
