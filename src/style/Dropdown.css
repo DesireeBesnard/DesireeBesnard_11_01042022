@@ -48,4 +48,8 @@
     display: block;
 }
 
+.display {
+    transform: rotate(180deg);
+}
+
 
