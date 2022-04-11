@@ -4,15 +4,15 @@ import '../../style/Dropdown.css'
 function Dropdown(props) {
 
     const handleToggle = (e) => {
+        const content = e.target.querySelector('.dropdown .dropdownContent')
 
-        e.target.classList.toggle('open')
-        // content.classList.toggle('display')
+        content.classList.toggle('open')
     }
 
     return (
-        <div className='dropdown'>
+        <div className='dropdown' onClick={handleToggle}>
             <h2>{props.title}</h2>
-            <button className='toggleDropdown' onClick={handleToggle}><img className='dropdownIcon' src={process.env.PUBLIC_URL + '/assets/dropdown.png'} alt="dropdown icon" /></button>
+            <img className='dropdownIcon' src={process.env.PUBLIC_URL + '/assets/dropdown.png'} alt="dropdown icon" />
             <div className='dropdownContent'>
                 {props.content}
             </div>
@@ -20,5 +20,5 @@ function Dropdown(props) {
     )
 
 }
-
+ 
 export default Dropdown

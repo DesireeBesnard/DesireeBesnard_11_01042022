@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.dropdown h2, .dropdownIcon, .dropdownContent {
+    pointer-events: none;
+}
+
 .dropdown h2 {
     color: white;
     font-size: 18px;
@@ -12,19 +16,10 @@
     padding-left: 20px;
 }
 
-.toggleDropdown {
-    position: absolute;
-    top: 15px;
-    right: 0;
-    margin-right: 20px;
-    border: none;
-    background-color: transparent;
-    transform-origin: center;
-    transform: rotate(180deg);
-}
-
 .dropdownIcon {
-    pointer-events: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
 }
 
 
@@ -50,11 +45,7 @@
 }
 
 .open {
-    transform: rotate(0deg);
-    transform-origin: center;
-}
-
-.display {
     display: block;
 }
+
 

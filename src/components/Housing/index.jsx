@@ -63,7 +63,9 @@ function Housing() {
             </header>
   
             <div className='descriptions'>
-              <Dropdown title ="Description" content={
+              <Dropdown 
+                title ="Description" 
+                content={
                 <p>{data.description}</p>
               } />
               <Dropdown 
