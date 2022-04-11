@@ -20,6 +20,7 @@
     position: absolute;
     right: 20px;
     top: 15px;
+    transform: rotate(180deg);
 }
 
 
@@ -49,7 +50,7 @@
 }
 
 .display {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 
