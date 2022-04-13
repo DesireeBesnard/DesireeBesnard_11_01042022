@@ -6,11 +6,41 @@
 }
 
 .header a {
-    padding-left: 57px;
     font-size: 24px;
     color: var(--main-color);
+}
+
+.link, .link-active {
+    padding-left: 57px;
 }
 
 .link-active {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 540px) {
+    .header a {
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .header a img {
+        width: 110px;
+        height: auto;
+    }
+
+    .link, .link-active {
+        padding-left: 20px;
+    }
+} 
+
+
+@media screen and (max-width: 768px) {
+
+}
+  
+@media screen and (max-width: 768px) {
+ 
+}
+

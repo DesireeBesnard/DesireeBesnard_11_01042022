@@ -18,3 +18,20 @@
 .values .dropdown:not(.values .dropdown:last-child) {
     margin-bottom: 30px;
 }
+
+
+@media screen and (max-width: 540px) {
+    .values {
+        width: 100%;
+    }
+
+    .values .dropdown {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768px) {
+    .values .dropdown {
+        width: 100%;
+    }
+}
