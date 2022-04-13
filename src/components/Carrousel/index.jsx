@@ -47,6 +47,7 @@ function Carrousel(props) {
         }
 
         moving = false
+
         if ((diffX > 0) && (Math.abs(diffY) < 150)) {
             previousSlide()
         } else if((diffX < 0) && (Math.abs(diffY) < 150)) {
@@ -55,7 +56,6 @@ function Carrousel(props) {
     }
 
     
-
     if (props.pictures) {
         images = props.pictures
 
@@ -83,8 +83,6 @@ function Carrousel(props) {
                 </section>
             )
         }
-
-
     }
 }
 

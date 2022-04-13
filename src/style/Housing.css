@@ -1,5 +1,6 @@
 .housingHeader{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
 }
@@ -9,6 +10,7 @@
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 5px;
+    max-width: 750px;
 }
 
 .housingHeader p {
@@ -39,10 +41,46 @@
 
 .descriptions {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
 }
 
 .descriptions .dropdown {
     width: 582px;
+}
+
+@media screen and (max-width: 540px) {
+
+    .host img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .descriptions .dropdown:not(.descriptions .dropdown:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768.99px) {
+    .notation {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 768.99px) {
+    .descriptions .dropdown {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .descriptions .dropdown {
+        width: 450px;
+    }
 }

@@ -52,14 +52,11 @@ function Housing() {
                 </div>
               </div>
   
-              <div>
+              <div className='notation'>
                 <div className='host'>
                   <p>{data.host['name']}</p>
                   <img src={data.host['picture']} alt="host portrait" />
                 </div>
-                {/* <div>
-                  <p>ratings: {data['rating']}</p>
-                </div> */}
                 <Rate numerator = {data['rating']} denominator = {5} name = {data['id']}/>
               </div>
             </header>
