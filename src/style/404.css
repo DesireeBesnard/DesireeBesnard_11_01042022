@@ -21,3 +21,20 @@
     margin-bottom: 80px;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 540px) {
+    .errorContainer h1 {
+        font-size: 88px;
+    }
+
+    .errorContainer p {
+        font-size: 26px;
+    }
+    
+}
+
+@media screen and (min-width: 541px) and (max-width: 768.99px) {
+    .errorContainer h1 {
+        font-size: 188px;
+    }
+}
